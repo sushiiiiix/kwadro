@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwadro | Simple Event Photo Sharing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .feature-icon { background: linear-gradient(135deg, #e0e7ff 0%, #e8f0ff 100%); }
+        .smooth-shadow { shadow-sm hover:shadow-xl transition-shadow duration-300 ease-in-out; }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-2xl font-black text-indigo-600 tracking-tight">KWADRO</div>
+            <a href="#contact" class="text-sm font-bold bg-slate-900 text-white px-5 py-2.5 rounded-full hover:bg-indigo-600 transition-colors">
+                Start Free
+            </a>
+        </div>
+    </nav>
+
+    <section class="pt-20 pb-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                Capture every angle of your event, <span class="text-indigo-600">effortlessly.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed">
+                Collect all the photos your guests take without chasing them down on social media. 
+                Simple for you, fun for them.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <button class="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold shadow-lg shadow-indigo-200 hover:scale-105 transition-transform">
+                    Create My Event
+                </button>
+                <p class="text-sm text-slate-400 italic">No credit card required to start</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 mb-24">
+        <div class="max-w-5xl mx-auto bg-slate-50 rounded-[2rem] p-4 border border-slate-100 shadow-2xl">
+            <div class="bg-white rounded-xl overflow-hidden aspect-video flex items-center justify-center border border-slate-100">
+                <div class="text-center">
+                    <div class="text-4xl mb-2">🎞️</div>
+                    <p class="text-slate-400 font-medium">Live Gallery Preview</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 smooth-shadow">
+                    <div class="w-12 h-12 feature-icon rounded-2xl flex items-center justify-center text-2xl mb-6">📱</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">App-Free Experience</h3>
+                    <p class="text-slate-600 leading-relaxed">Your guests just scan and upload. No downloads, no sign-ups, no friction.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 smooth-shadow">
+                    <div class="w-12 h-12 feature-icon rounded-2xl flex items-center justify-center text-2xl mb-6">⚡</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Real-Time Magic</h3>
+                    <p class="text-slate-600 leading-relaxed">Photos appear on the big screen seconds after they are taken. It’s instant entertainment.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 smooth-shadow">
+                    <div class="w-12 h-12 feature-icon rounded-2xl flex items-center justify-center text-2xl mb-6">🔒</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Private & Secure</h3>
+                    <p class="text-slate-600 leading-relaxed">You control the gallery. Review photos before they go live or keep the link private.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-extrabold text-center mb-12">Common Questions</h2>
+            <div class="space-y-6">
+                <div class="p-6 bg-white border border-slate-100 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-2">How do guests find the gallery?</h4>
+                    <p class="text-slate-600">We provide you with a high-quality QR code. Print it on table cards, menus, or display it on a screen!</p>
+                </div>
+                <div class="p-6 bg-white border border-slate-100 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-2">Do I get to keep the photos?</h4>
+                    <p class="text-slate-600">Yes! After the event, you can download all high-resolution images in a single ZIP file.</p>
+                </div>
+                <div class="p-6 bg-white border border-slate-100 rounded-2xl">
+                    <h4 class="font-bold text-lg mb-2">Can I moderate what's shown?</h4>
+                    <p class="text-slate-600">Absolutely. You can enable "Approval Mode" where photos only appear once you say they're okay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-xl font-black text-white">KWADRO</div>
+            <div class="flex gap-8 text-sm">
+                <a href="#" class="hover:text-white transition">Privacy</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Contact Support</a>
+            </div>
+            <div class="text-sm italic">Making memories easier.</div>
+        </div>
+    </footer>
+
+</body>
+</html>
